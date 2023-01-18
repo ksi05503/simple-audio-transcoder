@@ -5,8 +5,13 @@ export interface TranscodeParams {
     bitrate: number,
     outputFormat: string,
     outputFileName: string,
-    logProcess: boolean,
+    debugProgress: boolean,
     codec?: string,
+}
+
+
+export interface TranscodeResult {
+    path: string;
 }
 
 
