@@ -1,0 +1,14 @@
+{
+  "name": "simple-audio-transcoder",
+  "version": "1.0.0",
+  "description": "simple audio transcoder using ffmpeg",
+  "main": "main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ffmpeg"
+  ],
+  "author": "hwkim",
+  "license": "ISC"
+}
