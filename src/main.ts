@@ -32,7 +32,7 @@ function transcode(params: {
 
     const bitRateInString = `${Math.floor(bitrate / 1000)}k`;
 
-    const outputPath = `/Users/yeon/Desktop/lab/simple-audio-transcoder/outputs/${outputFileName}.${outputFormat}`;
+    const outputPath = `/outputs/${outputFileName}.${outputFormat}`;
 
     const codecArgs: string[] = [];
     if(codec){
