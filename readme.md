@@ -1,5 +1,5 @@
 # simple audio transcoder
-ffmpeg 바이너리 파일을 내장한 오디오 인코더 데모를 만들어보았습니다.  (muxing 과 인코딩 지원)
+ffmpeg 바이너리 파일을 내장한 오디오 인코더 데모를 만들어보았습니다.  (muxing & encoding)
 
 
 
