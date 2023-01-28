@@ -1,7 +1,7 @@
+<img src="https://user-images.githubusercontent.com/79785454/215266553-d277198f-3dda-4ae5-991e-33ac9430d6b0.png" alt="drawing" width="600"/>
+
 # simple audio transcoder
 ffmpeg 바이너리 파일을 내장한 오디오 인코더 데모를 만들어보았습니다.  (muxing & encoding)
-
-
 
 - [ffmpeg binary](https://ffmpeg.org/download.html)
 - [doc](https://ffmpeg.org/documentation.html)
