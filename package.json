@@ -1,13 +1,12 @@
 {
   "name": "simple-audio-transcoder",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "simple audio transcoder using ffmpeg",
   "repository": "ksi05503/simple-audio-transcoder",
   "main": "src/index.ts",
   "types": "@types/audio-transcoder/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "start": "npm run build && node dist/index.js",
     "test": "jest --config jest.config.ts"
   },
   "keywords": [
