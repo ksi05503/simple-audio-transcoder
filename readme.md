@@ -1,6 +1,6 @@
 # Simple Audio Transcoder
 
-Simple Audio Transcoder is a Node.js package that provides a simple and easy-to-use API for transcoding audio files using FFmpeg.
+[Simple Audio Transcoder](https://www.npmjs.com/package/simple-audio-transcoder) is a Node.js package that provides a simple and easy-to-use API for transcoding audio files using FFmpeg.
 
 ## Installation
 You can install Simple Audio Transcoder via npm:
