@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
-    "target": "ES2018",
+    "target": "es5",
     "module": "commonjs",
-    "outDir": "dist",
-    "rootDir": "src",
-    "esModuleInterop": true,
-    "resolveJsonModule": true
+    "declaration": true,
+    "outDir": "./dist",
+    "strict": true
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "__tests__/**/*"]
+  "exclude": [
+    "node_modules",
+    "__tests__/test-assets",
+    "dist"
+  ]
 }

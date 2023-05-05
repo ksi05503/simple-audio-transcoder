@@ -19,11 +19,3 @@ export type TranscodeParams = {
 export interface TranscodeResult {
     outputPath: string;
 }
-
-export type ParsedFileName = {
-    name: string;
-    extension?: string;
-};
-
-
-
