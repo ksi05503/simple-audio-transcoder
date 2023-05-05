@@ -24,7 +24,7 @@ export class AudioTranscoder {
         const audioStream: Readable = fs.createReadStream(path);
 
         return new Promise<TranscodeResult>((resolve, reject) => {
-            const transcodeProcess = child_process.spawn('ffmpeg', args);
+            const transcodeProcess = child_process.spawn(this.ffmpegPath, args);
 
             audioStream.pipe(transcodeProcess.stdin);
 

@@ -1,10 +1,10 @@
 {
   "name": "simple-audio-transcoder",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "description": "simple audio transcoder using ffmpeg",
   "repository": "ksi05503/simple-audio-transcoder",
-  "main": "dist/index.ts",
-  "types": "@types/audio-transcoder/index.d.ts",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "scripts": {
     "publish": "npm run build && npm publish",
     "build": "tsc",
