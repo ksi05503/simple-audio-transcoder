@@ -69,3 +69,4 @@ An interface that specifies the result of a transcoding operation.
 
 ## License
 #### Simple Audio Transcoder is released under the MIT License.
+#### Copyright (c) 2023 by devyyeon
