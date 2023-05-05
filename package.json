@@ -2,10 +2,7 @@
   "name": "simple-audio-transcoder",
   "version": "1.0.0",
   "description": "simple audio transcoder using ffmpeg",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ksi05503/simple-audio-transcoder"
-  },
+  "repository": "ksi05503/simple-audio-transcoder",
   "main": "index.ts",
   "types": "@types/audio-transcoder/index.d.ts",
   "scripts": {
