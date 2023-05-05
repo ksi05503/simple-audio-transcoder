@@ -6,7 +6,7 @@ Simple Audio Transcoder is a Node.js package that provides a simple and easy-to-
 You can install Simple Audio Transcoder via npm:
 
 ```bash
-npm install audio-transcoder
+npm install simple-audio-transcoder
 ```
 
 Usage
@@ -15,7 +15,7 @@ To use Simple Audio Transcoder, you need to have FFmpeg installed on your system
 Here's an example of how to transcode an audio file:
 
 ```typescript
-import { AudioTranscoder } from 'audio-transcoder';
+import { AudioTranscoder } from 'simple-audio-transcoder';
 
 const ffmpegPath = '/path/to/ffmpeg'; // Update this with your local FFmpeg binary path
 const transcoder = new AudioTranscoder(ffmpegPath);
@@ -24,11 +24,11 @@ const inputPath = '/path/to/input.mp3'; // Update this with your input audio fil
 const outputPath = '/path/to/output.m4a'; // Update this with your output audio file path
 
 await transcoder.transcode(inputPath, {
-  codec: 'aac',
-  outExtension: 'm4a',
-  bitrate: 128000,
-  outDir: outputPath,
-  logProgress: true,
+  codec: 'aac',  // optional
+  outExtension: 'm4a',  // optional  
+  bitrate: 128000,  // optional
+  outDir: outputPath, // optional
+  logProgress: true, // optional
 });
 
 console.log('Transcoding complete!');
