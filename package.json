@@ -1,9 +1,9 @@
 {
   "name": "simple-audio-transcoder",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "simple audio transcoder using ffmpeg",
   "repository": "ksi05503/simple-audio-transcoder",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "types": "@types/audio-transcoder/index.d.ts",
   "scripts": {
     "start": "npx ts-node src/index.ts",
