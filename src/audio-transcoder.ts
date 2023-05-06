@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import * as child_process from 'child_process';
+import * as childProcess from 'child_process';
 import { Readable } from 'stream';
 import { TranscodeParams, TranscodeResult } from "../@types/audio-transcoder";
 
@@ -17,14 +17,13 @@ export class AudioTranscoder {
         logProgress = false
     }: TranscodeParams): Promise<TranscodeResult> {
         const { name, extension } = this.parseFileName(path);
-        const bitRateInString = `${Math.floor(bitrate / 1000)}k`;
         const outputPath = `${outDir}/${name}${outExtension || extension ? `.${outExtension || extension}` : ''}`;
 
-        const args = this.buildArgs(bitRateInString, outputPath, codec);
+        const args = this.buildArgs(bitrate, outputPath, codec);
         const audioStream: Readable = fs.createReadStream(path);
 
         return new Promise<TranscodeResult>((resolve, reject) => {
-            const transcodeProcess = child_process.spawn(this.ffmpegPath, args);
+            const transcodeProcess = childProcess.spawn(this.ffmpegPath, args);
 
             audioStream.pipe(transcodeProcess.stdin);
 
@@ -42,7 +41,9 @@ export class AudioTranscoder {
         });
     }
 
-    private buildArgs(bitRateInString: string, outputPath: string, codec?: string): string[] {
+    private buildArgs(bitrate: number, outputPath: string, codec?: string): string[] {
+        const bitRateInString = `${Math.floor(bitrate / 1000)}k`;
+
         const codecArgs: string[] = [];
         if (codec) {
             codecArgs.push('-c:a', codec);
@@ -67,7 +68,7 @@ export class AudioTranscoder {
         return { name, extension };
     }
 
-    private logProgress(childProcess: child_process.ChildProcessWithoutNullStreams): void {
+    private logProgress(childProcess: childProcess.ChildProcessWithoutNullStreams): void {
         let scriptOutput = '';
 
         childProcess.stdout.setEncoding('utf8');

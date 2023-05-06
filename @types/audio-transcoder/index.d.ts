@@ -9,8 +9,8 @@ export type SupportedAudioExtension =
     | 'ogg';
 
 export type TranscodeParams = {
+    bitrate: number;
     codec?: string;
-    bitrate?: number;
     outDir?: string;
     outExtension?: SupportedAudioExtension;
     logProgress?: boolean;
